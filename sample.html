@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>参考Webサイトの模写コーディング</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-blue': '#0000ff',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black text-white font-sans">
+    <div id="splash" class="fixed inset-0 z-50 flex items-center justify-center bg-custom-blue">
+        <div id="splash-logo" class="text-4xl font-bold">Loading...</div>
+    </div>
+
+    <div id="container" class="opacity-0">
+        <header class="fixed top-0 left-0 w-full bg-white text-black py-4 px-6">
+            <h1 class="text-2xl font-bold">Sample Site</h1>
+        </header>
+
+        <main class="mt-20 p-6">
+            <section class="mb-8">
+                <h2 class="text-xl font-bold mb-4">Article 1</h2>
+                <p class="mb-4">This is the content of article 1. It can be quite long and detailed.</p>
+            </section>
+            <section class="mb-8">
+                <h2 class="text-xl font-bold mb-4">Article 2</h2>
+                <p class="mb-4">This is the content of article 2. It can also be long and detailed.</p>
+            </section>
+            <!-- Add more sections as needed -->
+        </main>
+
+        <footer class="bg-gray-800 text-white py-4 px-6 text-center">
+            <p>&copy; 2023 Sample Site. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        window.onload = function () {
+            const splash = document.getElementById('splash');
+            const splashLogo = document.getElementById('splash-logo');
+            const container = document.getElementById('container');
+
+            setTimeout(() => {
+                splashLogo.classList.add('opacity-0', 'transition-opacity', 'duration-500');
+                setTimeout(() => {
+                    splash.classList.add('opacity-0', 'transition-opacity', 'duration-500');
+                    setTimeout(() => {
+                        splash.classList.add('hidden');
+                        container.classList.remove('opacity-0');
+                        container.classList.add('opacity-100', 'transition-opacity', 'duration-500');
+                    }, 500);
+                }, 500);
+            }, 1500);
+        }
+    </script>
+</body>
+
+</html>
