@@ -5,8 +5,7 @@
 /*スクロール中に要素を隠す*/
 $(function () {
     $(window).on("scroll touchmove", function () {
-        $(".float-item").css("display", "none").delay(5000).fadeIn("fast");
-
+        $(".float-item").css("display", "none").delay(2000).fadeIn("slow");
     });
 });
 

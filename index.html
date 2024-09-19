@@ -22,7 +22,8 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/tailwindcss.css">
+    <link rel="stylesheet" type="text/css" href="./css/vegas.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/loading.css">
     <link rel="stylesheet" type="text/css" href="./css/slider.css">
@@ -45,7 +46,7 @@
         <!-- ナビゲーション -->
         <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar"
             aria-controls="default-sidebar" type="button"
-            class="hidden inline-flex items-center z-50 p-2 mt-2 ms-3 text-sm rounded-lg fixed top-0 left-0 sm:hidden focus:outline-none focus:ring-2 text-sky-400 hover:bg-sky-700 focus:ring-sky-600">
+            class="inline-flex items-center z-50 p-2 mt-2 ms-3 text-sm rounded-lg fixed top-0 left-0 sm:hidden focus:outline-none focus:ring-2 text-sky-400 hover:bg-sky-700 focus:ring-sky-600">
             <span class="sr-only">Open sidebar</span>
             <svg class="w-8 h-8" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
@@ -62,12 +63,10 @@
             <div class="w-32 h-32 text-center">
                 <a class="flex w-full h-full items-center" href="#first-view">
                     <div
-                        class="w-full h-full bg-cover bg-center hover:bg-[url('img/yuki_portfolio_dark_icon.png')] hover:bg-sky-700 duration-500">
+                        class="w-full h-full bg-cover bg-center bg-[url('../img/yuki_portfolio_dark_icon.png')] hover:bg-sky-700 duration-500">
                     </div>
                 </a>
             </div>
-
-
             <div class="h-full px-3 py-4 overflow-y-auto bg-transparent transparent">
                 <ul class="space-y-2 font-medium page-link">
                     <li>
@@ -91,7 +90,7 @@
                     </li>
                     <li>
                         <a href="#about"
-                            class="flex items-center p-2 duration-700 rounded-lg text-white bg-sky-700 group">
+                            class="flex items-center p-2 duration-700 rounded-lg text-white hover:bg-sky-700 group">
                             <svg class="flex-shrink-0 w-5 h-5 transition text-sky-400 group-hover:text-white"
                                 aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 viewBox="0 0 20 18">
@@ -103,7 +102,7 @@
                     </li>
                     <li>
                         <a href="#services"
-                            class="flex items-center p-2 duration-700 rounded-lg text-white bg-sky-700 group">
+                            class="flex items-center p-2 duration-700 rounded-lg text-white hover:bg-sky-700 group">
                             <svg class="flex-shrink-0 w-5 h-5 transition fill-sky-400 group-hover:fill-white"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <g>
@@ -129,7 +128,7 @@
                     </li>
                     <li>
                         <a href="#works"
-                            class="flex items-center p-2 duration-700 rounded-lg text-white bg-sky-700 group">
+                            class="flex items-center p-2 duration-700 rounded-lg text-white hover:bg-sky-700 group">
                             <svg class="flex-shrink-0 w-5 h-5 transition fill-sky-400 group-hover:fill-white"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <g>
@@ -143,7 +142,7 @@
                     </li>
                     <li>
                         <a href="#contact"
-                            class="flex items-center p-2 duration-700 rounded-lg text-white bg-sky-700 group">
+                            class="flex items-center p-2 duration-700 rounded-lg text-white hover:bg-sky-700 group">
                             <svg class="flex-shrink-0 w-5 h-5 transition fill-sky-400 group-hover:fill-white"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <g>
@@ -179,7 +178,7 @@
     <!-- main -->
     <main class="main">
         <section id="first-view">
-            <div class="w-screen h-screen bg-[url('./img/first_view_2.png')] bg-cover bg-center relative">
+            <div class="w-screen h-screen bg-[url('../img/first_view_2.png')] bg-cover bg-center relative">
                 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                     <h1 class="text-5xl text-sky-500 text-center font-semibold">
                         Yuki's Portfolio
@@ -217,7 +216,7 @@
                         <div
                             class="slide-in-bottom w-full my-5 relative inline-block items-center justify-center text-white rounded-full text-center mx-auto">
                             <div
-                                class="w-64 h-64 mx-auto rounded-full bg-[url('img/profile.jpg')] hover:bg-[url('img/profile_yuki.jpg')] bg-cover duration-700">
+                                class="w-64 h-64 mx-auto rounded-full bg-[url('../img/profile.jpg')] hover:bg-[url('../img/profile_yuki.jpg')] bg-cover duration-700">
                             </div>
                             <div
                                 class="slide-in-bottom my-5 md:w-2/3 w-11/12 text-left mx-auto divide-y rounded divide-slate-200">
@@ -266,7 +265,7 @@
                 <!-- 流体シェイプを動かす -->
                 <div class="fluid absolute -z-10 right-1/4 bottom-20"></div>
                 <!-- /流体シェイプを動かす -->
-                <div class="w-11/12 py-10 mx-auto text-center relative z-10 w-full">
+                <div class="py-10 mx-auto text-center relative z-10 w-full">
                     <h2
                         class="slide-in-bottom my-5 text-4xl font-semibold text-center text-sky-800 capitalize lg:text-3xl ">
                         Services
@@ -274,9 +273,9 @@
                     <div class="flex flex-col md:flex-row justify-center my-10 mx-4 gap-10">
                         <div
                             class="slide-in-bottom flex flex-1 flex-col items-center gap-4 text-center px-3 hover:shadow-xl duration-500">
-                            <div class="flex items-center w-10 h-10 fill-sky-300">
-                                <svg class="text-sky-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor" viewBox="0 0 24 24">
+                            <div class="flex items-center fill-sky-300 text-sky-300">
+                                <svg class="fill-sky-300 text-sky-300" aria-hidden="true" width="40" height="40"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path fill-rule="evenodd"
                                         d="M15.514 3.293a1 1 0 0 0-1.415 0L12.151 5.24a.93.93 0 0 1 .056.052l6.5 6.5a.97.97 0 0 1 .052.056L20.707 9.9a1 1 0 0 0 0-1.415l-5.193-5.193ZM7.004 8.27l3.892-1.46 6.293 6.293-1.46 3.893a1 1 0 0 1-.603.591l-9.494 3.355a1 1 0 0 1-.98-.18l6.452-6.453a1 1 0 0 0-1.414-1.414l-6.453 6.452a1 1 0 0 1-.18-.98l3.355-9.494a1 1 0 0 1 .591-.603Z"
                                         clip-rule="evenodd" />
@@ -291,8 +290,8 @@
                         </div>
                         <div
                             class="slide-in-bottom flex flex-1 flex-col items-center gap-4 text-center px-3 hover:shadow-xl duration-500">
-                            <div class="flex items-center w-10 h-10 fill-sky-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <div class="flex items-center fill-sky-300 text-sky-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
                                     <g>
                                         <path
                                             d="M451.791,76.035H60.21C27.018,76.035,0,103.059,0,136.25v221.526c0,43.111,35.072,78.189,78.178,78.189h355.644c43.106,0,78.178-35.078,78.178-78.189V136.25C512,103.059,484.982,76.035,451.791,76.035z M481.582,357.776c0,26.34-21.426,47.765-47.76,47.765H78.178c-26.334,0-47.76-21.425-47.76-47.765V136.25c0-16.43,13.367-29.791,29.792-29.791h391.581c16.424,0,29.791,13.36,29.791,29.791V357.776z">
@@ -345,8 +344,8 @@
                         </div>
                         <div
                             class="slide-in-bottom flex flex-1 flex-col items-center gap-4 text-center px-3 hover:shadow-xl duration-500">
-                            <div class="flex items-center w-10 h-10 fill-sky-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <div class="flex items-center fill-sky-300 text-sky-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
                                     <g>
                                         <path
                                             d="M502.318,455.344l-109.823-111.71c25.453-35.183,40.702-78.395,41.083-125.044v-0.047l0.009-1.812c0.01-59.335-24.012-113.447-62.792-152.533C332.249,25.252,278.657,0.784,219.582,0.05V0.04c-1.505-0.056-2.426-0.037-2.751-0.037C157.505-0.016,103.384,24.016,64.298,62.804C25.157,101.537,0.624,155.473,0.14,214.91v-0.075l-0.01,1.942c-0.008,59.316,24.014,113.438,62.801,152.524c38.734,39.141,92.669,63.665,152.096,64.158h0.307h0.26h1.329c48.09,0.018,92.751-15.78,128.752-42.432L454.812,502.04c12.899,13.122,33.984,13.298,47.106,0.409C515.03,489.551,515.207,468.456,502.318,455.344z M366.966,218.069v-0.037c-0.362,41.316-17.228,78.32-44.428,105.325c-27.238,26.95-64.381,43.472-105.613,43.492c-0.251,0-0.809,0-1.339,0c-41.334-0.372-78.339-17.248-105.344-44.439c-26.958-27.247-43.481-64.39-43.5-105.632l0.01-1.235v-0.075c0.363-41.334,17.238-78.339,44.438-105.344c27.247-26.967,64.4-43.49,105.642-43.508h0.409l0.4,0.008l0.482,0.01c41.345,0.372,78.348,17.248,105.353,44.448c26.959,27.247,43.482,64.4,43.5,105.651L366.966,218.069z">
@@ -517,7 +516,7 @@
                 </h2>
                 <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2 xl:grid-cols-3">
                     <div
-                        class="slide-in-bottom overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('img/display_portfolio.png')] bg-center">
+                        class="slide-in-bottom overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('../img/display_portfolio.png')] bg-center">
                         <div
                             class="relateive flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-sky-800/60 group-hover:opacity-100">
                             <h2 class="mt-4 text-xl font-semibold text-white capitalize">
@@ -544,7 +543,7 @@
                         </div>
                     </div>
                     <div
-                        class="slide-in-bottom overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('img/display_tsumugi.png')] bg-center">
+                        class="slide-in-bottom overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('../img/display_tsumugi.png')] bg-center">
                         <div
                             class="relateive flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-sky-800/60 group-hover:opacity-100">
                             <h2 class="mt-4 text-xl font-semibold text-white capitalize">
@@ -573,7 +572,7 @@
                         </div>
                     </div>
                     <div
-                        class="slide-in-bottom overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('img/display_kuniyama.png')] bg-center">
+                        class="slide-in-bottom overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('../img/display_kuniyama.png')] bg-center">
                         <div
                             class="relateive flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-sky-800/60 group-hover:opacity-100">
                             <h2 class="mt-4 text-xl font-semibold text-white capitalize">
@@ -601,7 +600,7 @@
                         </div>
                     </div>
                     <div
-                        class="xl:hidden slide-in-bottom overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('img/display_megumi.png')] bg-center">
+                        class="xl:hidden slide-in-bottom overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('../img/display_megumi.png')] bg-center">
                         <div
                             class="relateive flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-sky-800/60 group-hover:opacity-100">
                             <h2 class="mt-4 text-xl font-semibold text-white capitalize">
@@ -629,7 +628,7 @@
                         </div>
                     </div>
                     <div
-                        class="hidden slide-in-bottom overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('img/display_revol.png')] bg-center">
+                        class="hidden slide-in-bottom overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('../img/display_revol.png')] bg-center">
                         <div
                             class="relateive flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-sky-800/60 group-hover:opacity-100">
                             <h2 class="mt-4 text-xl font-semibold text-white capitalize">
@@ -657,7 +656,7 @@
                         </div>
                     </div>
                     <div
-                        class="hidden slide-in-bottom overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('img/display_revol.png')] bg-center">
+                        class="hidden slide-in-bottom overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('../img/display_revol.png')] bg-center">
                         <div
                             class="relateive flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-sky-800/60 group-hover:opacity-100">
                             <h2 class="mt-4 text-xl font-semibold text-white capitalize">
@@ -705,7 +704,7 @@
             <div>
                 <div class="container px-6 py-10 mx-auto text-center">
                     <h2
-                        class="slide-in-bottom my-10 text-4xl font-semibold text-center text-sky-800 capitalize lg:text-3xl text-sky-800">
+                        class="slide-in-bottom my-10 text-4xl font-semibold text-center capitalize lg:text-3xl text-sky-800">
                         Contact
                     </h2>
                     <h3
@@ -793,12 +792,12 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/vegas.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/app.js"></script>
     <script src="./js/particle.js"></script>
 </body>
 
